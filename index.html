@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vocabulary App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <hr>
+<button onclick="exportToExcel()">Download Excel</button>
+<input type="file" id="excelUpload" accept=".xlsx">
+</head>
+<body>
+  <div class="container">
+    <h1>My Vocabulary List</h1>
+    
+    <form id="wordForm">
+      <input type="text" id="word" placeholder="Enter word" required>
+      <input type="text" id="meaning" placeholder="Enter meaning" required>
+      <button type="submit">Add Word</button>
+    </form>
+
+   <div id="wordListContainer">
+  <div id="wordList"></div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

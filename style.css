@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+input, button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#wordList {
+  display: flex;
+  flex-direction: column; /* vertical stacking first */
+  flex-wrap: wrap; /* wrap to next column if height exceeds */
+  height: 400px; /* set fixed height to force wrapping */
+  max-height: 80vh;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.word-card {
+  background: #1e1e1e;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 6px;
+  width: 180px;
+  box-sizing: border-box;
+}
+
+.word-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.delete-btn {
+  background: red;
+  border: none;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#wordListContainer {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  border: 1px solid #444;
+  border-radius: 10px;
+}
+
+/* Scrollbar Styling (optional but better UI) */
+#wordListContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+#wordListContainer::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
